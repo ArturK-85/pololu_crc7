@@ -39,10 +39,8 @@ unsigned char CRC(unsigned char message[], unsigned char length)
     return crc;
 }
 
-int get_crc7(int param0, int param1, int param_num)
+int get_crc7(unsigned char *message, int param_num)
 {
-  unsigned char message[2] = {param0, param1};
-
   GenerateCRCTable();
   result = CRC(message, param_num);
   return result;
