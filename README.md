@@ -14,5 +14,7 @@ for futher use as a library in Python using ctypes
 
 ## Setup
 Linux Instrucion for compile library  
-in termina type:  
+in terminal type:  
+```
 cc -fPIC -shared -o pololu_crc7.so pololu_crc7.c
+```
